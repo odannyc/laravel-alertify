@@ -97,22 +97,22 @@ if ($error) {
 There's many options you can add per alert:
 ```php
 // Show the alert for 5000 milliseconds and then dismisses itself (default: 4000)
-alert('delayed 5 seconds')->delay(5000);
+alertify('delayed 5 seconds')->delay(5000);
 
 // Alert stays displayed with no timeout
-alert('i stay displayed on the screen')->persistent();
+alertify('i stay displayed on the screen')->persistent();
 
 // Alert can be clicked to be dismissed
-alert('i can be clicked to be dismissed')->clickToClose();
+alertify('i can be clicked to be dismissed')->clickToClose();
 
 // You can position alerts (default: 'top right')
-alert('i am on the bottom left')->position('bottom left');
+alertify('i am on the bottom left')->position('bottom left');
 
 // You can attach the alert to some other HTML element (default: 'document.body')
-alert('i am displayed on a different parent')->attach('.some-html-accessor')
+alertify('i am displayed on a different parent')->attach('.some-html-accessor')
 ```
 
 You can also daisy chain options:
 ```php
-alert()->success('i am daisychained')->delay(10000)->clickToClose()->position('bottom right');
+alertify()->success('i am daisychained')->delay(10000)->clickToClose()->position('bottom right');
 ```

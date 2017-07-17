@@ -11,7 +11,7 @@
             alertify.logPosition({{ $log->position }});
             alertify.closeLogOnClick({{ $log->clickToClose }});
 
-            alertify.{{ $alert->type }}({{ $log->message }});
+            alertify.{{ $log->type }}({{ $log->message }});
         @endforeach
     </script>
 @endif

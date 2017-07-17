@@ -12,32 +12,39 @@ class Log
      * The message of the alert log
      * @var string $message
      */
-    private $message;
+    public $message;
 
     /**
      * The delay in milliseconds to keep the alert shown
      * @var int $delay
      */
-    private $delay = 3000;
+    public $delay = 4000;
 
     /**
      * Close the alert on click?
      * @var bool $clickToClose
      */
-    private $clickToClose = false;
+    public $clickToClose = false;
 
     /**
      * The type of alert this is, this can be:
      * log, success, error or
      * @var string $type
      */
-    private $type = 'log';
+    public $type = 'log';
 
     /**
      * The position of the alert
      * @var string $position
      */
-    private $position = 'top right';
+    public $position = 'top right';
+
+    /**
+     * The parent that the alert is attached to.
+     *
+     * @var string $parent
+     */
+    public $parent = 'document.body';
 
     /**
      * Sets a standard alert
@@ -141,6 +148,19 @@ class Log
     {
         $this->delay = 0;
         Alertify::flash();
+        return $this;
+    }
+
+    /**
+     * Sets the parent of the log/alert.
+     * This is usually an HTML element
+     *
+     * @param string $element
+     * @return Log
+     */
+    public function attach(string $element): Log
+    {
+        $this->parent = $element;
         return $this;
     }
 }

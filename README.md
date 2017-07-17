@@ -19,6 +19,20 @@ Or include the CDN version of it in your `app.blade.php` template. (File may var
 <script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>
 ```
 
+Include the service provider in `config/app.php`:
+```php
+'providers' => [
+    odannyc\Alertify\AlertifyServiceProvider::class,
+];
+```
+
+Also, include the Alias in `config/app.php`
+```php
+'aliases' => [
+    'Alertify' => odannyc\Alertify\Alertify::class,
+];
+```
+
 Then, in the template of your Laravel installation, include the view anywhere in the body of your HTML:
 ```php
 @include('alertify::alertify')

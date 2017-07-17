@@ -69,7 +69,9 @@ Alertify::standard('I like alerts')
 ```
 
 There are 3 types of alerts:
+
 ![laravel-alertify](/assets/images/types.png?raw=true)
+
 ```php
 alertify('this is a standard alert (shows black)');
 alertify()->success('this is a success alert (shows green)');

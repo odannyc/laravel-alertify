@@ -1,6 +1,8 @@
 # laravel-alertify
 An alertify package for Laravel
 
+![laravel-alertify](/assets/images/main.png?raw=true)
+
 ## Installation
 This package uses composer, so require it like so:
 ```
@@ -67,6 +69,7 @@ Alertify::standard('I like alerts')
 ```
 
 There are 3 types of alerts:
+![laravel-alertify](/assets/images/types.png?raw=true)
 ```php
 alertify('this is a standard alert (shows black)');
 alertify()->success('this is a success alert (shows green)');

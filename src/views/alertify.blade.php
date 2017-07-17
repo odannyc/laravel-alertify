@@ -1,9 +1,3 @@
-<?php
-/**
- * @author Danny Carrillo <odannycx@gmail.com>
- * @package laravel-alertify
- */
-
 @if (Session::has('odannyc.alertify.logs'))
     <script>
         @foreach(Session::pull('odannyc.alertify.logs') as $log)

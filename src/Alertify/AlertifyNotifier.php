@@ -29,14 +29,14 @@ class AlertifyNotifier
 
     public function flash()
     {
-        $this->session->flash('odannyc.alertify.alert', $this->logs);
+        $this->session->flash('odannyc.alertify.logs', $this->logs);
     }
 
     public function __call($name, $arguments)
     {
         $log = new Log();
-        $log->$name(...$arguments);
         $this->logs[] = $log;
+        $log->$name(...$arguments);
 
         return $log;
     }

@@ -4,14 +4,14 @@
  * @package laravel-alertify
  */
 
-@if (Session::has('odannyc.alertify.alert'))
+@if (Session::has('odannyc.alertify.logs'))
     <script>
-        @foreach(Session::pull('odannyc.alertify.alert') as $alert)
-            alertify.delay({{ $alert->delay }});
-            alertify.logPosition({{ $alert->position }});
-            alertify.closeLogOnClick({{ $alert->clickToClose }});
+        @foreach(Session::pull('odannyc.alertify.logs') as $log)
+            alertify.delay({{ $log->delay }});
+            alertify.logPosition({{ $log->position }});
+            alertify.closeLogOnClick({{ $log->clickToClose }});
 
-            alertify.{{ $alert->type }}({{ $alert->message }});
+            alertify.{{ $alert->type }}({{ $log->message }});
         @endforeach
     </script>
 @endif

@@ -1,0 +1,22 @@
+{
+    "name": "odannyc/laravel-alertify",
+    "description": "An alertify package for Laravel",
+    "authors": [
+        {
+            "name": "Danny Carrillo",
+            "email": "odannycx@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/session": "^5.4",
+        "illuminate/support": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "odannyc\\Alertify\\": "src/Alertify/"
+        },
+        "files": [
+            "src/Alertify/functions.php"
+        ]
+    }
+}

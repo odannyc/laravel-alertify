@@ -22,17 +22,36 @@ class AlertifyNotifier
      */
     private $session;
 
+    /**
+     * AlertifyNotifier constructor.
+     *
+     * @param Store $session
+     */
     public function __construct(Store $session)
     {
         $this->session = $session;
     }
 
-    public function flash()
+    /**
+     * Saves a flash to the session
+     *
+     * @return void
+     */
+    public function flash(): void
     {
         $this->session->flash('odannyc.alertify.logs', $this->logs);
     }
 
-    public function __call($name, $arguments)
+    /**
+     * Any request that comes in gets stored as a log
+     * and then the log gets returned
+     *
+     * @param $name
+     * @param $arguments
+     *
+     * @return Log
+     */
+    public function __call($name, $arguments): Log
     {
         $log = new Log();
         $this->logs[] = $log;

@@ -52,9 +52,11 @@ class Log
      * @param string $message The standard alert
      * @return Log
      */
-    public function standard(string $message): Log
+    public function standard(?string $message = null): Log
     {
-        $this->message = $message;
+        if (!is_null($message)) {
+            $this->message = $message;
+        }
         $this->type = 'log';
         Alertify::flash();
         return $this;
@@ -66,9 +68,11 @@ class Log
      * @param string $message The success message
      * @return Log
      */
-    public function success(string $message): Log
+    public function success(?string $message = null): Log
     {
-        $this->message = $message;
+        if (!is_null($message)) {
+            $this->message = $message;
+        }
         $this->type = 'success';
         Alertify::flash();
         return $this;
@@ -80,9 +84,11 @@ class Log
      * @param string $message The error message
      * @return Log
      */
-    public function error(string $message): Log
+    public function error(?string $message = null): Log
     {
-        $this->message = $message;
+        if (!is_null($message)) {
+            $this->message = $message;
+        }
         $this->type = 'error';
         Alertify::flash();
         return $this;

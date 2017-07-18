@@ -1,6 +1,13 @@
 {
     "name": "odannyc/laravel-alertify",
     "description": "An alertify package for Laravel",
+    "homepage": "https://github.com/odannyc/laravel-alertify",
+    "keywords": [
+        "odannyc",
+        "alertify",
+        "laravel alerts",
+        "alerts"
+    ],
     "authors": [
         {
             "name": "Danny Carrillo",
@@ -8,6 +15,7 @@
         }
     ],
     "require": {
+        "php" : "^7.1",
         "illuminate/session": "^5.4",
         "illuminate/support": "^5.4"
     },
@@ -18,5 +26,6 @@
         "files": [
             "src/Alertify/functions.php"
         ]
-    }
+    },
+    "license": "MIT"
 }

@@ -1,5 +1,8 @@
 # laravel-alertify
-An alertify package for Laravel
+An alerts library for Laravel using alertify
+```php
+alertify()->success("The laravel-alertify package is awesome!");
+```
 
 ![laravel-alertify](/assets/images/main.png?raw=true)
 

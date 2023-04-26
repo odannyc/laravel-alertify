@@ -1,10 +1,10 @@
 <?php
 /**
- * @author Danny Carrillo <odannycx@gmail.com>
+ * @author Panchani Ankit <panchania83@gmail.com>
  * @package laravel-alertify
  */
 
-namespace odannyc\Alertify;
+namespace panchania83\Alertify;
 
 class Log
 {

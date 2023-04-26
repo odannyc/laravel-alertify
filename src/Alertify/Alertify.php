@@ -1,10 +1,10 @@
 <?php
 /**
- * @author Danny Carrillo <odannycx@gmail.com>
+ * @author Panchani Ankit <panchania83@gmail.com>
  * @package laravel-alertify
  */
 
-namespace odannyc\Alertify;
+namespace panchania83\Alertify;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -17,6 +17,6 @@ class Alertify extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'odannyc.alertify';
+        return 'panchania83.alertify';
     }
 }

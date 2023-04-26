@@ -1,6 +1,6 @@
 <?php
 /**
- * @author Danny Carrillo <odannycx@gmail.com>
+ *  @author Panchani Ankit <panchania83@gmail.com>
  * @package laravel-alertify
  */
 
@@ -10,11 +10,11 @@ if (!function_exists('alertify')) {
      *
      * @param string|null $message
      *
-     * @return \odannyc\Alertify\AlertifyNotifier
+     * @return \panchania83\Alertify\AlertifyNotifier
      */
     function alertify($message = null)
     {
-        $notifier = app('odannyc.alertify');
+        $notifier = app('panchania83.alertify');
         if (!is_null($message)) {
             return $notifier->standard($message);
         }

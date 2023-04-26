@@ -8,6 +8,7 @@
         "laravel alerts",
         "alerts"
     ],
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Panchani Ankit",

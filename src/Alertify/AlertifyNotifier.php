@@ -1,10 +1,10 @@
 <?php
 /**
- * @author Danny Carrillo <odannycx@gmail.com>
+ * @author Panchani Ankit <panchania83@gmail.com>
  * @package laravel-alertify
  */
 
-namespace odannyc\Alertify;
+namespace panchania83\Alertify;
 
 use Illuminate\Session\Store;
 
@@ -39,7 +39,7 @@ class AlertifyNotifier
      */
     public function flash(): void
     {
-        $this->session->flash('odannyc.alertify.logs', $this->logs);
+        $this->session->flash('panchania83.alertify.logs', $this->logs);
     }
 
     /**

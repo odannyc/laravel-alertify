@@ -1,6 +1,6 @@
-@if (Session::has('odannyc.alertify.logs'))
+@if (Session::has('panchania83.alertify.logs'))
     <script>
-        @foreach(Session::pull('odannyc.alertify.logs') as $log)
+        @foreach(Session::pull('panchania83.alertify.logs') as $log)
             alertify.parent({{ $log->parent }});
             alertify.delay({{ $log->delay }});
             alertify.logPosition('{{ $log->position }}');

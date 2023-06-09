@@ -1,10 +1,10 @@
 <?php
 /**
- * @author Danny Carrillo <odannycx@gmail.com>
+ * @author Panchani Ankit <panchania83@gmail.com>
  * @package laravel-alertify
  */
 
-namespace odannyc\Alertify;
+namespace panchania83\Alertify;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -17,8 +17,8 @@ class AlertifyServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('odannyc.alertify', function () {
-            return $this->app->make('odannyc\Alertify\AlertifyNotifier');
+        $this->app->singleton('panchania83.alertify', function () {
+            return $this->app->make('panchania83\Alertify\AlertifyNotifier');
         });
     }
 

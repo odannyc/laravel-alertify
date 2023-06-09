@@ -9,7 +9,7 @@ alertify()->success("The laravel-alertify package is awesome!");
 ## Installation
 This package uses composer, so require it like so:
 ```
-composer require odannyc/laravel-alertify
+composer require panchania83/laravel-alertify
 ```
 
 You'll also need to pull in the `alertify.js` project. This is located here: https://alertifyjs.org/
@@ -27,14 +27,14 @@ Or include the CDN version of it in your `app.blade.php` template. (File may var
 Include the service provider in `config/app.php`:
 ```php
 'providers' => [
-    odannyc\Alertify\AlertifyServiceProvider::class,
+    panchania83\Alertify\AlertifyServiceProvider::class,
 ];
 ```
 
 Also, include the Alias in `config/app.php`
 ```php
 'aliases' => [
-    'Alertify' => odannyc\Alertify\Alertify::class,
+    'Alertify' => panchania83\Alertify\Alertify::class,
 ];
 ```
 
